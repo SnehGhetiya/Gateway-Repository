@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML LAYOUT PAGE 1</title>
+		<style type="text/css">
+		/* CSS properties for body */
+		body{
+				padding: 0;
+				margin: 0;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+			}
+
+		#banner{
+				width:100%;
+				height:150px;
+				background-color:lightgrey;
+				margin-top:10px;
+				padding-top:25px;
+		}
+		
+		/* CSS properties for client logos */
+		.client-box{
+			float:left;
+			width:16.66%;
+			height:100px;
+			box-sizing:border-box;
+			padding:15px;
+			margin-bottom: 50px;
+		}
+
+		/* CSS properties for client logo box text */
+		#logotxt{
+			background-color:lightgrey;
+			padding-top:45px;
+			padding-bottom:25px;
+			text-align:center;
+			/* font-weight: bold; */
+		}
+
+		/* CSS properties for footers */
+		#foot1{
+			padding:25px;
+			box-sizing:border-box;
+			display:inline-block;
+			width:50%;
+		}
+
+		#foot2{
+			padding:25px;
+			box-sizing:border-box;
+			display:inline-block;
+			width:49%;
+			text-align:right;
+		}
+		</style>
+	</head>
+
+	<body>
+		<!-- header with logo and navigations -->
+		<header style="width: 100%; box-sizing: border-box; background-color:lightgrey; padding: 5px 20px 5px 20px;" id="heading">
+			<p style="display: inline-block; width:50%;">LOGO</p>
+			<p style="display: inline-block; width: 49%; text-align: right;">NAVIGATION</p>
+		</header>
+		<!-- banner and title -->
+		<div id="banner">
+			<h2 style="color:grey; text-align: center">BANNER GOES HERE</h2>
+		</div>
+		<!-- punchline and information -->
+		<div id="punchline" style="width: 100%; height: 250px; box-sizing: border-box; background-color:lightgrey; padding-top: 25px; padding-left: 100px; font-weight: bold;">
+			<p style="margin-left: 75px;">PUNCHLINE GOES HERE</p>
+			<button style="margin-left: 75px; padding: 10px; background-color:blue; color:white; border: none; border-radius: 5px; font-weight: bold;">READ MORE</button>
+		</div>
+		<!-- dummy text -->
+		<div id="text" style="width: 100%; box-sizing: border-box; padding: 25px 150px 25px 150px;">
+			<p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<!-- services provided by the site -->
+		<div id="services">
+			<!-- service-1 -->
+			<div style="float: left; width:33.33%; box-sizing: border-box; padding:15px;">
+				<div style="width: 100%; box-sizing: border-box; background-color:lightgrey; padding-top: 125px; padding-bottom: 125px; text-align: center;">
+					<b>SERVICE</b>
+				</div>
+			</div>
+			<!-- service-2 -->
+			<div style="float: right; width: 33.33%; box-sizing: border-box; padding: 15px;">
+				<div style="width: 100%; box-sizing: border-box; background-color:lightgrey; padding-top: 125px; padding-bottom: 125px; text-align: center;">
+					<b>SERVICE</b>
+				</div>
+			</div>
+			<!-- service-3 -->
+			<div style="float: right; width: 33.33%; box-sizing: border-box; padding: 15px;">
+				<div style="width: 100%; box-sizing: border-box; background-color:lightgrey; padding-top: 125px; padding-bottom: 125px; text-align: center;">
+					<b>SERVICE</b>
+				</div>
+			</div>
+		</div>
+		<!-- client information -->
+		<div id="logo" style="clear: both;">
+			<h3 style="text-align: center; padding-top: 25px;">CLIENT LOGO GOES HERE</h3>
+			<!-- client logo-1 -->
+			<div class="client-box">
+				<div style="width: 100%; height:inherit; background-color:lightgrey;">
+					<div id="logotxt">LOGO-1</div>
+				</div>
+			</div>
+			<!-- client logo-2 -->
+			<div class="client-box">
+				<div style="width: 100%; height: inherit; background-color:lightgrey;">
+					<div id="logotxt">LOGO-2</div>
+				</div>
+			</div>
+			<!-- client logo-3 -->
+			<div class="client-box">
+				<div style="width: 100%; height: inherit; background-color:lightgrey;">
+					<div id="logotxt">LOGO-3</div>
+				</div>
+			</div>
+			<!-- client logo-4 -->
+			<div class="client-box">
+				<div style="width: 100%; height: inherit; background-color:lightgrey;">
+					<div id="logotxt">LOGO-4</div>
+				</div>
+			</div>
+			<!-- client logo-5 -->
+			<div class="client-box">
+				<div style="width: 100%; height: inherit; background-color:lightgrey;">
+					<div id="logotxt">LOGO-5</div>
+				</div>
+			</div>
+			<!-- client logo-6 -->
+			<div class="client-box">
+				<div style="width: 100%; height: inherit; background-color:lightgrey;">
+					<div id="logotxt">LOGO-6</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer with links and address -->
+		<footer style="clear: left; height: 240px; width: 100%; background-color:lightgrey;">
+		<p id="foot1"><b style="font-size: large;">FOOTER ADDRESS</b><br/><br/>SOCIAL ICONS</p>
+		<p id="foot2">FOOTER LINKS</p>
+		<p id="foot1">COPYRIGHT</p>
+		<p id="foot2">PRIVACY</p>
+		</footer>
+	</body>
+</html>
