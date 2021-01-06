@@ -37,7 +37,7 @@ If user is registered and logged in then and only then that authorized one is ab
 
 * Index Page
 
-![Index Page](/3_Product_Management_Assignment/Screenshots/1116.png)
+![Index Page](/3_Product_Management_Assignment/Screenshots/1123.png)
 
 After successful login here on the top right of the navbar user can see his/her gmail.
 
