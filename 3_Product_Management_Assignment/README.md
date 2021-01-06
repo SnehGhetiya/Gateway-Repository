@@ -23,13 +23,13 @@ After referring this repository you'll understand basic functionality of **CRUD*
 
 ### Here are some screenshots are attached about the application
 
-* Signup Page
+* SignUp Page
 
-![Signup Page](/Screenshots/1119.png)
+![SignUp Page](/3_Product_Management_Assignment/Screenshots/1119.png)
 
 * Login Page
 
-![Login Page](/Screenshots/1120.png)
+![Login Page](/3_Product_Management_Assignment/Screenshots/1120.png)
 
 If user is registered and logged in then and only then that authorized one is able to perform CRUD operations otherwise it not allows it.
 
@@ -37,7 +37,7 @@ If user is registered and logged in then and only then that authorized one is ab
 
 * Index Page
 
-![Index Page](/Screenshots/1116.png)
+![Index Page](/3_Product_Management_Assignment/Screenshots/1116.png)
 
 After successful login here on the top right of the navbar user can see his/her gmail.
 
@@ -45,7 +45,7 @@ After successful login here on the top right of the navbar user can see his/her 
 
 * Add New Product Page
 
-![Add Page](/Screenshots/1114.png)
+![Add Page](/3_Product_Management_Assignment/Screenshots/1114.png)
 
 Adding a new product.
 
@@ -53,7 +53,7 @@ Adding a new product.
 
 * Products List Page
 
-![List Page](/Screenshots/1122.png)
+![List Page](/3_Product_Management_Assignment/Screenshots/1122.png)
 
 List available products.
 
@@ -61,7 +61,7 @@ List available products.
 
 * Edit Page
 
-![Edit Page](/Screenshots/1118.png)
+![Edit Page](/3_Product_Management_Assignment/Screenshots/1118.png)
 
 Editing the available product.
 
@@ -69,7 +69,7 @@ Editing the available product.
 
 * Delete Page
 
-![Delete Page](/Screenshots/1113.png)
+![Delete Page](/3_Product_Management_Assignment/Screenshots/1113.png)
 
 Deleting product and saying sweetalert after it.
 
@@ -77,7 +77,7 @@ Deleting product and saying sweetalert after it.
 
 * WebApi Page
 
-![Api Page](/Screenshots/1121.png)
+![Api Page](/3_Product_Management_Assignment/Screenshots/1121.png)
 
 You can also fetch data from the database by using WebApi link provided below.
 
