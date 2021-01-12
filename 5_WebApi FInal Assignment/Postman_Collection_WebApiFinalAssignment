@@ -1,0 +1,494 @@
+{
+	"info": {
+		"_postman_id": "d831963e-68aa-4c85-ba9e-0e2b3a5b75f9",
+		"name": "WebApiFinalAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST-Hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"The Silver Club\",\r\n    \"Address\": \"Gondal Road\",\r\n    \"City\": \"Rajkot\",\r\n    \"Pincode\": \"360018\",\r\n    \"Contact_Number\": \"7539146820\",\r\n    \"Contact_Person\": \"John Doe\",\r\n    \"Website\": \"www.tsc.com\",\r\n    \"Facebook\": \"facebook/tsc\",\r\n    \"Twitter\": \"twitter/tsc\",\r\n    \"IsActive\": \"no\",\r\n    \"Created_Date\": \"01/12/2021\",\r\n    \"Created_By\": \"Sneh\",\r\n    \"Updated_Date\": \"01/12/2021\",\r\n    \"Updated_By\": \"Sneh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44359/api/Hotel/PostNewHotel/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Hotel",
+						"PostNewHotel",
+						""
+					]
+				},
+				"description": "This request creates a new hotel."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Hotel",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Hotel/GetHotelDetails",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Hotel",
+						"GetHotelDetails"
+					]
+				},
+				"description": "This request lists all the available hotels by default sorting by name."
+			},
+			"response": []
+		},
+		{
+			"name": "POST-Room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Hotel_Id\": 1003,\r\n    \"Name\": \"TSC01\",\r\n    \"Category\": \"51-100m2\",\r\n    \"Price\": 80000.00,\r\n    \"IsActive\": \"No\",\r\n    \"Created_Date\": \"01/12/2021\",\r\n    \"Created_By\": \"Sneh\",\r\n    \"Updated_Date\": \"01/12/2021\",\r\n    \"Updated_By\": \"Sneh\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44359/api/Room/AddRoom/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Room",
+						"AddRoom",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "This request posts new rooms with passed parameters."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Rooms",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Room/GetRoomDetails",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Room",
+						"GetRoomDetails"
+					]
+				},
+				"description": "This request get all the rooms available."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Room_ByCity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Room/GetRoomDetails?city=Rajkot",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Room",
+						"GetRoomDetails"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Rajkot"
+						}
+					]
+				},
+				"description": "This request lists all rooms based on city."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Room_ByPincode",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Room/GetRoomDetails?pincode=360006",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Room",
+						"GetRoomDetails"
+					],
+					"query": [
+						{
+							"key": "pincode",
+							"value": "360006"
+						}
+					]
+				},
+				"description": "This request lists rooms based on pincode."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Room_ByCategory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Room/GetRoomDetails?category=<35m2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Room",
+						"GetRoomDetails"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "<35m2"
+						}
+					]
+				},
+				"description": "This request lists rooms based on category."
+			},
+			"response": []
+		},
+		{
+			"name": "POST-Booking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Booking_Date\": \"01/21/2021\",\r\n    \"Room_Id\": \"8\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44359/api/Booking/NewBooking/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Booking",
+						"NewBooking",
+						""
+					]
+				},
+				"description": "This request books a room."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-Update_BookingDate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Booking_Date\": \"02/23/2021\",\r\n    \"Room_Id\": \"8\",\r\n    \"Status\": \"Booked\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44359/api/Booking/UpdateDate/?id=6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Booking",
+						"UpdateDate",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				},
+				"description": "This request updates a booking date."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-Update_BookingStatus",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Booking_Date\": \"01/23/2021\",\r\n    \"Room_Id\": \"8\",\r\n    \"Status\": \"Booked\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44359/api/Booking/UpdateStatus/?id=6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Booking",
+						"UpdateStatus",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				},
+				"description": "This request updates booking status."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-IsRoomAvailable",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44359/api/Booking/IsRoomAvailable/?date=02/11/2021",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Booking",
+						"IsRoomAvailable",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "02/11/2021"
+						}
+					]
+				},
+				"description": "This request checks whether the room is available on the date or not."
+			},
+			"response": []
+		},
+		{
+			"name": "GET-BookingList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Booking/BookingsList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Booking",
+						"BookingsList"
+					]
+				},
+				"description": "This request lists all bookings."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-Booking",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BASIC QWRtaW46MTIzNDU2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44359/api/Booking/DeleteBooking/?id=4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44359",
+					"path": [
+						"api",
+						"Booking",
+						"DeleteBooking",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				},
+				"description": "This request deletes a booking."
+			},
+			"response": []
+		}
+	]
+}

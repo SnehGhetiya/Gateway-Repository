@@ -1,0 +1,5 @@
+C:\Users\Sneh\source\repos\HMS.WebApi\HMS.Models\bin\Debug\HMS.Models.dll
+C:\Users\Sneh\source\repos\HMS.WebApi\HMS.Models\bin\Debug\HMS.Models.pdb
+C:\Users\Sneh\source\repos\HMS.WebApi\HMS.Models\obj\Debug\HMS.Models.csproj.CoreCompileInputs.cache
+C:\Users\Sneh\source\repos\HMS.WebApi\HMS.Models\obj\Debug\HMS.Models.dll
+C:\Users\Sneh\source\repos\HMS.WebApi\HMS.Models\obj\Debug\HMS.Models.pdb
